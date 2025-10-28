@@ -1,0 +1,45 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="MCU" CircId="mega328-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-192,-80" rotation="0" hflip="1" vflip="1" label="mega328-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="E:/Google Drive/UFCG/Disciplinas/Microcontroladores/Atmega328p/Codigos/ADC/ADC/Debug/ADC.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" varList="ADMUX" MainMcu="true" SerialMon="1" />
+
+<item itemtype="Voltage Source" CircId="Voltage Source-2" mainComp="false" ShowProp="MaxValue" Show_id="false" Show_Val="true" Pos="-72,-104" rotation="0" hflip="1" vflip="1" label="Voltage Source-2" idLabPos="-32,-48" labelrot="0" valLabPos="-8,30" valLabRot="0" Running="true" Value_Volt="3.005 V" MaxValue="5 V" MinValue="0 V" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-3" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="-4,-76" rotation="90" hflip="1" vflip="1" label="Fixed Voltage-3" idLabPos="-64,-24" labelrot="0" valLabPos="-6.42394,-21.5987" valLabRot="0" Voltage="3 V" Out="true" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-4" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="36,-76" rotation="90" hflip="1" vflip="1" label="Fixed Voltage-4" idLabPos="-64,-24" labelrot="0" valLabPos="-6.42394,-22.9045" valLabRot="0" Voltage="5 V" Out="true" />
+
+<item itemtype="Inductor" CircId="Inductor-5" mainComp="false" ShowProp="Inductance" Show_id="false" Show_Val="true" Pos="36,-28" rotation="90" hflip="1" vflip="1" label="Inductor-5" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Inductance="10 µH" Resistance="1 µΩ" InitVolt="0 A" ReaStep="0 ns" />
+
+<item itemtype="Capacitor" CircId="Capacitor-6" mainComp="false" ShowProp="Capacitance" Show_id="false" Show_Val="true" Pos="36,24" rotation="90" hflip="1" vflip="1" label="Capacitor-6" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Capacitance="100 nF" Resistance="1 µΩ" InitVolt="0 V" ReaStep="0 ns" />
+
+<item itemtype="Ground" CircId="Ground-7" mainComp="false" Show_id="false" Show_Val="false" Pos="36,72" rotation="0" hflip="1" vflip="1" label="Ground-7" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Capacitor" CircId="Capacitor-10" mainComp="false" ShowProp="Capacitance" Show_id="false" Show_Val="true" Pos="-4,24" rotation="90" hflip="1" vflip="1" label="Capacitor-10" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Capacitance="100 nF" Resistance="1 µΩ" InitVolt="0 V" ReaStep="0 ns" />
+
+<item itemtype="Ground" CircId="Ground-12" mainComp="false" Show_id="false" Show_Val="false" Pos="-4,72" rotation="0" hflip="1" vflip="1" label="Ground-12" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Node" CircId="Node-9" mainComp="false" Pos="36,-8" />
+
+<item itemtype="Node" CircId="Node-11" mainComp="false" Pos="-4,-16" />
+
+<item itemtype="Connector" uid="Connector-1" startpinid="Voltage Source-2-outPin" endpinid="mega328-1-PORTC0" pointList="-44,-88,-44,-32,-152,-32" />
+
+<item itemtype="Connector" uid="Connector-3" startpinid="Fixed Voltage-4-outnod" endpinid="Inductor-5-lPin" pointList="36,-60,36,-44" />
+
+<item itemtype="Connector" uid="Connector-5" startpinid="Capacitor-6-rPin" endpinid="Ground-7-Gnd" pointList="36,40,36,56" />
+
+<item itemtype="Connector" uid="Connector-10" startpinid="mega328-1-PORTV0" endpinid="Node-9-1" pointList="-152,-8,36,-8" />
+
+<item itemtype="Connector" uid="Connector-11" startpinid="Inductor-5-rPin" endpinid="Node-9-0" pointList="36,-12,36,-8" />
+
+<item itemtype="Connector" uid="Connector-12" startpinid="Node-9-2" endpinid="Capacitor-6-lPin" pointList="36,-8,36,8" />
+
+<item itemtype="Connector" uid="Connector-13" startpinid="Capacitor-10-lPin" endpinid="Node-11-1" pointList="-4,8,-4,-16" />
+
+<item itemtype="Connector" uid="Connector-14" startpinid="Fixed Voltage-3-outnod" endpinid="Node-11-0" pointList="-4,-60,-4,-16" />
+
+<item itemtype="Connector" uid="Connector-15" startpinid="Node-11-2" endpinid="mega328-1-PORTV1" pointList="-4,-16,-152,-16" />
+
+<item itemtype="Connector" uid="Connector-16" startpinid="Ground-12-Gnd" endpinid="Capacitor-10-rPin" pointList="-4,56,-4,40" />
+
+</circuit>

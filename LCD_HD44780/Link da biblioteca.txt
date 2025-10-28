@@ -1,0 +1,2 @@
+httpswww.nongnu.orgavr-libcuser-manualgroup__stdiodemo.html
+https://embarcados.com.br/curso-de-c-display-hd44780-p8/

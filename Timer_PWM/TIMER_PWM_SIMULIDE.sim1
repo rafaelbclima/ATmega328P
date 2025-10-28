@@ -1,0 +1,41 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="MCU" CircId="mega328-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-204,-160" rotation="0" hflip="1" vflip="1" label="mega328-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="Timer_PWM/Debug/Timer_PWM.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" MainMcu="true" SerialMon="-1" />
+
+<item itemtype="Oscope" CircId="Oscope-2" mainComp="false" Show_id="false" Show_Val="false" Pos="-108,48" rotation="0" hflip="1" vflip="1" label="Oscope-2" idLabPos="-90,-100" labelrot="0" valLabPos="-16,20" valLabRot="0" Basic_X="135 _px" Basic_Y="135 _px" BufferSize="600000" connectGnd="true" InputImped="10 MΩ" TimDiv="256000000" TimPos="0,0,0,0," VolDiv="1,1,1,1," Tunnels=",,,," Trigger="0" Filter="0.1 V" AutoSC="4" Tracks="2" HideCh="false,false,false,false," VolPos="0,0,0,0," />
+
+<item itemtype="Led" CircId="Led-5" mainComp="false" Show_id="false" Show_Val="false" Pos="-308,-72" rotation="-180" hflip="1" vflip="1" label="Led-5" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Ground" CircId="Ground-6" mainComp="false" Show_id="false" Show_Val="false" Pos="-336,-56" rotation="0" hflip="1" vflip="1" label="Ground-6" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Resistor" CircId="Resistor-8" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-268,-72" rotation="0" hflip="1" vflip="1" label="Resistor-8" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="DcMotor" CircId="DcMotor-17" mainComp="false" Show_id="true" Show_Val="false" Pos="-332,-140" rotation="0" hflip="-1" vflip="1" label="DcMotor-17" idLabPos="-22,-48" labelrot="0" valLabPos="-14,36" valLabRot="0" RPM_Nominal="60 _RPM" Volt_Nominal="5 V" Resistance="100 Ω" />
+
+<item itemtype="Ground" CircId="Ground-18" mainComp="false" Show_id="false" Show_Val="false" Pos="-380,-92" rotation="0" hflip="1" vflip="1" label="Ground-18" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="BJT" CircId="BJT-22" mainComp="false" Show_id="false" Show_Val="false" Pos="-264,-180" rotation="0" hflip="-1" vflip="1" label="BJT-22" idLabPos="18,0" labelrot="0" valLabPos="-16,20" valLabRot="0" PNP="false" Gain="100" Vcrit="0.670736 V" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-24" mainComp="false" Show_id="false" Show_Val="false" Pos="-316,-212" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-24" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="true" />
+
+<item itemtype="Node" CircId="Node-27" mainComp="false" Pos="-240,-72" />
+
+<item itemtype="Connector" uid="Connector-14" startpinid="Ground-6-Gnd" endpinid="Led-5-rPin" pointList="-336,-72,-324,-72" />
+
+<item itemtype="Connector" uid="Connector-19" startpinid="Led-5-lPin" endpinid="Resistor-8-lPin" pointList="-292,-72,-284,-72" />
+
+<item itemtype="Connector" uid="Connector-50" startpinid="Ground-18-Gnd" endpinid="DcMotor-17-rPin" pointList="-380,-108,-380,-140,-372,-140" />
+
+<item itemtype="Connector" uid="Connector-51" startpinid="BJT-22-emiter" endpinid="DcMotor-17-lPin" pointList="-272,-164,-272,-140,-292,-140" />
+
+<item itemtype="Connector" uid="Connector-52" startpinid="Fixed Voltage-24-outnod" endpinid="BJT-22-collector" pointList="-300,-212,-272,-212,-272,-196" />
+
+<item itemtype="Connector" uid="Connector-56" startpinid="mega328-1-PORTD6" endpinid="Oscope-2-Pin0" pointList="-212,-64,-224,-64,-224,0,-196,0" />
+
+<item itemtype="Connector" uid="Connector-63" startpinid="Resistor-8-rPin" endpinid="Node-27-1" pointList="-252,-72,-240,-72" />
+
+<item itemtype="Connector" uid="Connector-64" startpinid="mega328-1-PORTD5" endpinid="Node-27-0" pointList="-212,-72,-240,-72" />
+
+<item itemtype="Connector" uid="Connector-65" startpinid="Node-27-2" endpinid="Oscope-2-Pin1" pointList="-240,-72,-240,32,-196,32" />
+
+</circuit>

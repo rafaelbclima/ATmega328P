@@ -1,0 +1,11 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="MCU" CircId="mega328-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-276,-128" rotation="0" hflip="1" vflip="1" label="mega328-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="E:/Google Drive/UFCG/Disciplinas/Microcontroladores/Atmega328p/Codigos/UART/UART/Debug/UART.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" MainMcu="true" SerialMon="1" />
+
+<item itemtype="LAnalizer" CircId="LAnalizer-2" mainComp="false" Show_id="false" Show_Val="false" Pos="-48,-72" rotation="0" hflip="1" vflip="1" label="LAnalizer-2" idLabPos="-90,-100" labelrot="0" valLabPos="-16,20" valLabRot="0" Basic_X="135 _px" Basic_Y="135 _px" BufferSize="100000" connectGnd="true" InputImped="10 MΩ" TimDiv="788784408" TimPos="806781318" VolDiv="0.15" Tunnels=",,,,,,,," Trigger="1" TimeStep="1000 _ps" AutoExport="false" TresholdR="2.5 V" Bus="false,false,true,true,true,true,true,true," TresholdF="2.5 V" />
+
+<item itemtype="Connector" uid="Connector-3" startpinid="LAnalizer-2-Pin0" endpinid="mega328-1-PORTD0" pointList="-136,-136,-284,-136,-284,-112" />
+
+<item itemtype="Connector" uid="Connector-4" startpinid="LAnalizer-2-Pin1" endpinid="mega328-1-PORTD1" pointList="-136,-120,-284,-120,-284,-104" />
+
+</circuit>
